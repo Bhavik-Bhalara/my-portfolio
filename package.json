@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "npx live-server --port=8080 --open=/index.html",
-    "dev": "npx live-server --port=8080 --open=/index.html --watch=css,js,*.html",
+    "dev": "npx live-server --port=8080 --open=/index.html --watch=src,*.html",
     "build": "echo 'No build process needed for static site'",
     "test": "echo 'No tests specified'",
     "deploy": "echo 'Deploy to your preferred hosting service'"

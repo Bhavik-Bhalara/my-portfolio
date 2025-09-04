@@ -19,27 +19,59 @@ A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. T
 
 ```
 my-portfolio/
-├── index.html          # Main homepage
-├── about.html          # About page
-├── services.html       # Services page
-├── blog.html          # Blog/Journal page
-├── contact.html       # Contact page
-├── single.html        # Single blog post template
-├── generic.html       # Generic page template
-├── styles.html        # Style guide page
-├── css/
-│   ├── styles.css     # Main stylesheet
-│   └── vendor.css     # Third-party CSS
-├── js/
-│   ├── main.js        # Main JavaScript file
-│   └── plugins.js     # JavaScript plugins
-├── images/
-│   ├── avatars/       # Profile images
-│   ├── clients/       # Client logos
-│   ├── icons/         # Icon files
-│   └── thumbs/        # Thumbnail images
-└── README.md          # Project documentation
+├── index.html              # Main homepage
+├── package.json           # Project configuration
+├── README.md              # Project documentation
+├── LICENSE                # License file
+├── deploy.bat             # Windows deployment script
+├── deploy.sh              # Unix deployment script
+├── src/                   # Source files
+│   ├── pages/             # HTML pages
+│   │   ├── about.html     # About page
+│   │   ├── services.html  # Services page
+│   │   ├── blog.html      # Blog/Journal page
+│   │   ├── contact.html   # Contact page
+│   │   ├── single.html    # Single blog post template
+│   │   ├── generic.html   # Generic page template
+│   │   └── styles.html    # Style guide page
+│   ├── styles/            # CSS files
+│   │   ├── styles.css     # Main stylesheet
+│   │   └── vendor.css     # Third-party CSS
+│   ├── scripts/           # JavaScript files
+│   │   ├── main.js        # Main JavaScript file
+│   │   └── plugins.js     # JavaScript plugins
+│   └── assets/            # Static assets
+│       ├── images/        # Image files
+│       │   ├── avatars/   # Profile images
+│       │   ├── clients/   # Client logos
+│       │   ├── icons/     # Icon files
+│       │   └── thumbs/    # Thumbnail images
+│       ├── icons/         # Icon assets
+│       └── fonts/         # Font files
+├── public/                # Public assets
+│   ├── favicon.ico        # Favicon
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── android-chrome-*.png
+│   └── site.webmanifest   # Web app manifest
+├── docs/                  # Documentation
+│   ├── DEVELOPMENT.md     # Development guide
+│   └── GETTING_STARTED.md # Getting started guide
+└── config/                # Configuration files
 ```
+
+## 🏗️ Project Structure Benefits
+
+This portfolio follows modern web development best practices with a well-organized structure:
+
+- **Separation of Concerns**: Source files are organized by type (pages, styles, scripts, assets)
+- **Scalability**: Easy to add new pages, styles, and assets without cluttering the root directory
+- **Maintainability**: Clear organization makes it easier to find and update specific files
+- **Development Workflow**: Supports modern development tools and build processes
+- **Asset Management**: Centralized asset management in the `src/assets/` directory
+- **Public Assets**: Favicon and manifest files are properly organized in `public/`
+- **Documentation**: All documentation is centralized in the `docs/` directory
 
 ## 🛠️ Technologies Used
 
@@ -103,26 +135,26 @@ my-portfolio/
 
 1. **Update content in HTML files**:
    - Edit `index.html` for homepage content
-   - Modify `about.html` for personal information
-   - Update `services.html` for your services/skills
-   - Customize `contact.html` with your contact details
+   - Modify `src/pages/about.html` for personal information
+   - Update `src/pages/services.html` for your services/skills
+   - Customize `src/pages/contact.html` with your contact details
 
 2. **Replace images**:
-   - Add your profile photo to `images/`
+   - Add your profile photo to `src/assets/images/`
    - Replace placeholder images with your own
-   - Update client logos in `images/clients/`
+   - Update client logos in `src/assets/images/clients/`
 
 3. **Modify styling**:
-   - Edit `css/styles.css` for custom styles
+   - Edit `src/styles/styles.css` for custom styles
    - Update color scheme, fonts, and layout as needed
 
 ### Content Updates
 
-- **Name and Title**: Update in `index.html` (line 99)
-- **About Section**: Modify content in `about.html` and `index.html`
-- **Services**: Update expertise areas in `index.html` (lines 230-280)
+- **Name and Title**: Update in `index.html`
+- **About Section**: Modify content in `src/pages/about.html` and `index.html`
+- **Services**: Update expertise areas in `index.html` and `src/pages/services.html`
 - **Social Links**: Update social media links throughout the site
-- **Contact Information**: Update in `contact.html` and footer sections
+- **Contact Information**: Update in `src/pages/contact.html` and footer sections
 
 ## 🌐 Deployment
 
