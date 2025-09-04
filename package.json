@@ -1,0 +1,39 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=8080 --open=/index.html",
+    "dev": "npx live-server --port=8080 --open=/index.html --watch=css,js,*.html",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests specified'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/my-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "personal-website"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/my-portfolio/issues"
+  },
+  "homepage": "https://your-username.github.io/my-portfolio",
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
